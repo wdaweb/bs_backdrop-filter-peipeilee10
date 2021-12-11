@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Parisienne&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <style>
+    .bg {
+      background: url(./bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .filter-gray {
+      backdrop-filter: grayscale(1);
+    }
+
+    .filter-bright {
+      backdrop-filter: brightness(1.5)
+    }
+
+    .filter-blur {
+      backdrop-filter: blur(5px)
+    }
+
+    .filter-contrast {
+      backdrop-filter: contrast(0.8)
+    }
+
+    .filter-invert {
+      backdrop-filter: invert(0.7)
+    }
+
+    .filter-opacity {
+      backdrop-filter: opacity(0.4)
+    }
+
+    .filter-sepia {
+      backdrop-filter: sepia(0.4)
+    }
+
+    .filter-saturate {
+      backdrop-filter: saturate(1.8)
+    }
+
+    .filter-hue-rotate {
+      backdrop-filter: hue-rotate(120deg)
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .h {
+      height: 350px;
+    }
+
+    .word {
+      font-size: 24px;
+    }
+
+    .borderleft {
+      border-radius: 10px 0 0 10px;
+    }
+
+
+    @media(max-width:768px) {
+      .h {
+        height: 100px;
+      }
+
+      .borderleft {
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid bg vh-100 d-flex overflow-auto justify-content-center px-5 pt-5">
+    <div class="row d-flex h-75 align-items-center flex-md-nowrap">
+      <div class="col-12 col-md-2 h border border-white borderleft text-secondary text text-center word shadow">
+        backdrop-filter<br>效果
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center shadow">backdrop-filter: none
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-gray shadow">
+        backdrop-filter:
+        grayscale(1)
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-bright shadow">
+        backdrop-filter: brightness(1.5)
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-blur shadow">
+        backdrop-filter:
+        blur(5px)</div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-contrast shadow">
+        backdrop-filter:
+        contrast(0.8)
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-invert shadow">
+        backdrop-filter:
+        invert(0.7)
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-opacity shadow">
+        backdrop-filter:
+        opacity(0.4)
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-sepia shadow">
+        backdrop-filter:
+        sepia(0.4)</div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-saturate shadow">
+        backdrop-filter:
+        saturate(1.8)
+      </div>
+      <div class="col-12 col-md-2 h border border-white text-secondary text text-center filter-hue-rotate shadow">
+        backdrop-filter:
+        hue-rotate(120deg)</div>
+    </div>
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
